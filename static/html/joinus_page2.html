@@ -1,0 +1,493 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
+    <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet"  href="../static/css/about.css">
+    <link rel="stylesheet"  href="../static/css/index.css">
+
+    <style>
+        body {
+            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+        }
+        .job-title-area {
+            width: 100%;
+        }
+        .job-title {
+            padding-left:10%;
+            padding-right: 2%;
+            text-align: left;
+            color: white;
+            background-color: #bc2925;
+            font-size: 2.0rem;
+            line-height: 4rem;
+            font-weight: normal;
+            display: inline;
+            float: left;
+        }
+        .job-title-indicator {
+            margin-left: 0.5rem;
+            width: 0.5rem;
+            line-height: 4rem;
+            font-size: 2.0rem;
+            background-color: #bc2925;
+            display: inline;
+            float: left;
+        }
+        .submit-resume {
+            margin-top: 1.875rem;
+            margin-left:1.25rem;
+        }
+        .submit-border:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+        .submit-border {
+            width:7.5rem;
+            height: 2.5rem;
+            padding-top:0.35rem;
+            border:0.1rem solid #bc2925;
+            text-align:center;
+            font-size: 1.25rem;
+            color: #bc2925;
+            cursor: pointer;
+        }
+        .submit-link {
+            color: #bc2925!important;
+            display: block;
+        }
+        ul.qdrs_pagination {
+            display: inline-block;
+            padding: 0;
+            margin: auto;
+        }
+        ul.qdrs_pagination .active {
+            background-color: gainsboro;
+        }
+
+        ul.qdrs_pagination li {
+            display: inline;
+        }
+
+        ul.qdrs_pagination li a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+        ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+        .job-content {
+            padding: 0 0% 5% 10%;
+            clear: both;
+        }
+        .job-content h2 {
+            text-align: left;
+            margin-left:1.25rem;
+            font-size: 1.25rem;
+        }
+        .job-content ol {
+            font-size: 1.1rem;
+            line-height: 1.875rem;
+            letter-spacing: 0.0625rem;
+        }
+        .job-content p {
+            margin-left:1.25rem;
+            font-size: 1.1rem;
+            text-align: left;
+        }
+        .notice {
+            font-size:1.1rem!important;
+            letter-spacing: 0.3rem;
+            line-height: 1.6rem;
+            margin: auto 20%;
+            font-weight: normal;
+            text-align: left;
+            text-indent: 2rem;
+        }
+
+        @media screen and (max-width: 768px){
+            .job-content ol {
+                margin-left: -2.2rem;
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/autoshowmenu.js"></script>
+
+    <!--[if IE]>
+    <script>
+        (function(){if(!/*@cc_on!@*/0)return;var e = "header,footer,nav,article,section".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+    </script>
+    <![endif]-->
+    <script>
+        $(document).ready(function(){
+            $('#circleContent').carousel({interval:2000});//每隔5秒自动轮播
+        });
+    </script>
+
+    <title>启迪睿视信息技术有限公司</title>
+
+</head>
+
+<body>
+<div class="navigation-menu">
+    <div class="qdrs-nav-brand">
+        <a href="/">
+            <img src="../static/img/logo.svg">
+        </a>
+    </div>
+    <div class="qdrs-nav-menu" style="float: left;">
+        <ul style="list-style-type: none">
+            <li><a href="/">首页</a></li>
+            <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
+                <a href="/solutions">解决方案</a>
+                <ul id="solutions" style="list-style-type:none;">
+                    <li class="sss"><a href="/solutions#energy">能源行业</a></li>
+                    <li class="sss"><a href="/solutions#tobacco">烟草行业</a></li>
+                    <li class="sss"><a href="/solutions#retail">新零售</a></li>
+                    <li class="sss"><a href="/solutions#logistics">新物流</a></li>
+                </ul>
+            </li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus" ><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
+            <li class="active"><a href="/joinus">加入我们</a></li>
+            <li><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile-pic" >
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.4px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.1px 0.4rem 0 0.5rem;display: block;"></div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+        <ul style=";z-index: 20;width: 100%;list-style-type: none;rgba(0,0,0,0.7)">
+            <li ><a href="/">首页</a></li>
+            <li ><a href="/solutions">解决方案</a></li>
+            <li ><a href="/about">关于睿视</a></li>
+            <li ><a href="/joinus">加入我们</a></li>
+            <li ><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+<!-- when position:fixed opened, open this too.
+<div>
+    <span class="blank" style="height:50px;"></span>
+</div>
+-->
+
+<div class ="fill-nav"></div>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="circleContent" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner_join.webp">
+                                <img style="width: 100%;" src="../static/img/banner_join.jpg"/>
+                            </picture>
+
+                            <!--<div class="carousel-caption"> </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner结束-->
+
+<!--关于我们 -->
+<div>
+    <div style="padding: 3.125rem 0px;background-image: url(../static/img/bg_about_title.png); background-size: cover;background-position:center;" class="qdrs_title">
+        <h1>招聘岗位</h1>
+        <h4>Job&nbsp;r<span class="xxian">ecru</span>itment</h4>
+        <p class="notice" style="">
+            启迪睿视信息技术有限公司，研发中心分设于上海、北京、芜湖、伦敦。
+            公司专注于人工智能机器视觉技术方案的开发与应用，主要目标市场包括工业智能制造及其它新经济新业态，助力中国制造走向中国创造。
+            上海研发坐落于上海张江高科技板块，顶尖研发团队，广阔的成长空间。 期待有能力有激情的你加入，让我们为梦想而战！
+        </p>
+    </div>
+
+        <div>
+            <div onmouseover="this.style.backgroundColor='#efefef'" onmouseout="this.style.backgroundColor='white'">
+                <div style="padding-top: 4%;">
+                    <div class="job-title-area">
+                        <h1 class="job-title">高级驱动软件工程师</h1>
+                        <h1 class="job-title-indicator">&nbsp;</h1>
+                    </div>
+                </div>
+                <div class="job-content">
+                    <div>
+                        <h2><u>岗位职责</u></h2>
+                        <ol>
+                            <li>负责智能视觉产品底层驱动程序，以及软件集成层的设计和开发；</li>
+                            <li>负责智能视觉产品软件与算法的集成和测试；</li>
+                            <li>负责智能视觉产品客户端软件客户端技术支持；</li>
+                            <li>参与camera选型;</li>
+                            <li>参与项目的需求分析和方案设计，完成相应的设计文档。</li>
+                        </ol>
+                        <h2><u>招聘要求</u></h2>
+                        <ol>
+                            <li>教育背景：本科及以上学历，计算机、电子、自动化、通信等相关专业;</li>
+                            <li>工作经验：三年级以上驱动软件实际开发经验，熟悉linux内核，驱动开发经验并有camera相关开发经验;</li>
+                            <li>良好的C++基础，熟悉STL模板库,3年以上VC/C++开发经验;</li>
+                            <li>熟悉常用的数据结构和算法，熟悉设计模式</li>
+                            <li>精通QT开发软件开发，有QML开发经验优先；</li>
+                            <li>素质能力：对业界新技术敏感，喜欢钻研，有较强的自我驱动力和快速学习能力，责任心强。对代码有洁癖，遇到问题可以一查到底，善用工具，对工程效率有自己的见解。</li>
+                        </ol>
+                        <h2><u>招聘人数</u></h2>
+                        <p>若干</p>
+                        <h2><u>工作地点</u></h2>
+                        <p>上海</p>
+                        <div class="submit-resume">
+                            <div class="submit-border">
+                                <span class="submit-link" href="#">投递简历</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div>
+        <div onmouseover="this.style.backgroundColor='#efefef'" onmouseout="this.style.backgroundColor='white'">
+            <div style="padding-top: 4%;">
+                <div class="job-title-area">
+                    <h1 class="job-title">财务经理/主管</h1>
+                    <h1 class="job-title-indicator">&nbsp;</h1>
+                </div>
+            </div>
+            <div class="job-content">
+                <div>
+                    <h2><u>岗位职责</u></h2>
+                    <ol>
+                        <li>负责编制公司财务报表，审核公司各项目成本、费用支出，发票与记账凭证，同时进行成本核算、费用管理；</li>
+                        <li>完成各项财务结算、会计核算，上报执行情况，为管理层提供分析数据；</li>
+                        <li>负责业务往来账务追踪， 结账， 对账， 开票等账务工作；</li>
+                        <li>管理会计凭证和报表， 并妥善保存会计档案及相关资料;</li>
+                        <li>与财政、税务、银行、工商等部门保持良好关系，做好税务协调工作;</li>
+                        <li>负责财务制度的建设及完成上级领导交办的其它事宜。</li>
+                    </ol>
+                    <h2><u>招聘要求</u></h2>
+                    <ol>
+                        <li>教育背景：本科及以上学历，财务会计等相关专业;</li>
+                        <li>工作经验：5年以上会计工作经验，熟悉企业财务流程及熟练使用财务软件、办公软件，有高新技术产业财务经验优先;</li>
+                        <li>知识技能：熟悉国家会计、税务法规和报税流程；熟悉会计准则，企业以及相关的财务法规，政策，纳税申报及其它涉税事项的法规政策;</li>
+                        <li>素质能力：认真细致，责任心强，性格开朗，有良好的语言表达及较强的沟通能力。</li>
+                    </ol>
+                    <h2><u>招聘人数</u></h2>
+                    <p>若干</p>
+                    <h2><u>工作地点</u></h2>
+                    <p>上海</p>
+                    <div class="submit-resume">
+                        <div class="submit-border">
+                            <span class="submit-link" href="#">投递简历</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div onmouseover="this.style.backgroundColor='#efefef'" onmouseout="this.style.backgroundColor='white'">
+            <div style="padding-top: 4%;">
+                <div class="job-title-area">
+                    <h1 class="job-title">运维工程师</h1>
+                    <h1 class="job-title-indicator">&nbsp;</h1>
+                </div>
+            </div>
+            <div class="job-content">
+                <div>
+                    <h2><u>岗位职责</u></h2>
+                    <ol>
+                        <li>负责桌面计算机软硬件（计算机、显示器、电话、网络设施和其他附属硬件设施，如打印机、扫描仪）安装、配置、升级、运行维护与管理，保障桌面系统正常运行，满足日常工作的需要；</li>
+                        <li>负责对网络设备、服务器及安全系统等运行监控与管理，负责对公司综合布线系统的维护与管理；</li>
+                        <li>撰写运维技术文档，统计整理运维数据；</li>
+                        <li>企业邮件系统、业务邮件系统等的维护;</li>
+                        <li>协助完成IT系统基础架构的设计规划;</li>
+                        <li>负责系统硬件架构(服务器以及附属设备)的实施部署工作;</li>
+                        <li>负责Windows服务器系统的日常运维工作；</li>
+                        <li>开发环境的技术支持，代码服务器的维护;</li>
+                        <li>负责网站数据库、栏目、程序模块的设计与开发，维护网站程序。</li>
+                        <li>根据需求完成网站信息的更新以及信息资源的整合。</li>
+                    </ol>
+                    <h2><u>招聘要求</u></h2>
+                    <ol>
+                        <li>教育背景： 计算机相关专业，本科学历;</li>
+                        <li>工作经验：1年以上技术支持、网络工程师经验；具备网络故障的准确分析、定位能力，并能够提供有效的解决建议和方案;</li>
+                        <li>知识技能：对各种综合布线、路由、交换协议、服务器、存储及网络安全有了解和认识； 熟练掌握对主流网络产品（如思科、华为、H3C等）调试和应用;</li>
+                        <li>素质能力：对新技术敏感，喜欢钻研，良好的沟通能力，较好的团队合作能力。</li>
+                    </ol>
+                    <h2><u>招聘人数</u></h2>
+                    <p>若干</p>
+                    <h2><u>工作地点</u></h2>
+                    <p>上海</p>
+                    <div class="submit-resume">
+                        <div class="submit-border">
+                            <span class="submit-link" href="#">投递简历</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div onmouseover="this.style.backgroundColor='#efefef'" onmouseout="this.style.backgroundColor='white'">
+            <div style="padding-top: 4%;">
+                <div class="job-title-area">
+                    <h1 class="job-title">市场推广专员</h1>
+                    <h1 class="job-title-indicator">&nbsp;</h1>
+                </div>
+            </div>
+            <div class="job-content">
+                <div>
+                    <h2><u>岗位职责</u></h2>
+                    <ol>
+                        <li>负责公司官网SEO优化及内容维护、更新；</li>
+                        <li>负责负责公司新媒体平台（微信、微博、行业门户论坛等）内容的发布、更新、维护，增加产品和品牌曝光量；</li>
+                        <li>利用百度贴吧、百科、社区、qq群、微博、微信等各种网络营销渠道，发布和热点关键词信息的配合推广公司网站；</li>
+                        <li>负责软文撰写，图片制作，视频的剪辑及发布;</li>
+                    </ol>
+                    <h2><u>招聘要求</u></h2>
+                    <ol>
+                        <li>教育背景：中文、新闻、广告、传媒、市场营销相关专业，本科及以上学历;</li>
+                        <li>工作经验：一年及以上有网络推广、运营经验者优先；优秀毕业生亦可；有高新技术企业、互联网企业工作背景尤佳，具备一定的文案能力;</li>
+                        <li>知识技能：熟悉百度、360、搜狗等搜索引擎推广，精通关键词库优化，外链建设；了解网站开发、运维和SEO的相关知识;</li>
+                        <li>专业工具：对互联网操作熟练、熟练使用Word、Excel、PS等常用相关软件;</li>
+                        <li>素质能力：工作认真负责，动手能力强，有敏锐的创作嗅觉，有良好的沟通协调能力及团队合作精神。</li>
+                    </ol>
+                    <h2><u>招聘人数</u></h2>
+                    <p>若干</p>
+                    <h2><u>工作地点</u></h2>
+                    <p>上海</p>
+                    <div class="submit-resume">
+                        <div class="submit-border">
+                            <span class="submit-link" href="#">投递简历</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!--分页-->
+<div style="margin-top: 50px;text-align: center;">
+    <ul class="qdrs_pagination">
+        <li class="pre_page"><a href="#"><</a></li>
+        <li><a href="/joinus">1</a></li>
+        <li><a href="" class="active">2</a></li>
+        <li class="next_page"><a href="#">></a></li>
+    </ul>
+</div>
+<span>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <symbol id="oppo-logo-common"viewBox="0 0 415 67">
+                <path d="M48.9.3C22.1.3.3 11.2.3 24.5s21.8 24.2 48.6 24.2 48.6-10.8 48.6-24.2S75.8.3 48.9.3zm-4.7 41.4c-17.9 0-32.4-7.8-32.4-17.5S26.3 6.7 44.2 6.7s32.4 7.8 32.4 17.5-14.5 17.5-32.4 17.5zM366.1.3c-26.9 0-48.6 10.8-48.6 24.2s21.8 24.2 48.6 24.2 48.6-10.8 48.6-24.2S392.9.3 366.1.3zm-4.8 41.4c-17.9 0-32.4-7.8-32.4-17.5s14.5-17.5 32.4-17.5 32.4 7.8 32.4 17.5-14.4 17.5-32.4 17.5zM156.1.3c-8.3 0-16.7 1-22.7 2.9v6.6c5.8-2.1 11.9-3.1 18-3 17.9 0 32.3 7.8 32.3 17.5s-14.5 17.5-32.4 17.5c-12.6 0-23.9-3.9-28.9-9.6V1.7h-18v65h18V42c9 4.1 20.5 6.7 33.5 6.7 26.8 0 48.7-10.8 48.7-24.2S182.9.3 156.1.3zM262.6.3c-7.8 0-15.6.9-23.2 2.9v6.6c6-2 12.2-3 18.5-3 17.9 0 32.5 7.8 32.5 17.5S276 41.7 258.1 41.7c-12.6 0-23.7-3.9-28.7-9.6V1.7h-18v65h17.8V42.3c8.7 4.1 20.5 6.6 33.6 6.6 26.8 0 48.5-10.9 48.5-24.3S289.4.3 262.6.3z"/>
+            </symbol>
+        </svg>
+</span>
+<div>
+    <div style="height: 5rem;background-color: white;padding-top: 2rem">
+        <p style="text-align: center;color: black;font-size: 1rem;">
+            2018-芜湖启迪睿视信息技术有限公司 版权所有 <a style="text-decoration: none;color: black" href="http://www.miitbeian.gov.cn">皖ICP备18014597号</a>
+        </p>
+
+    </div>
+</div>
+<div class="gotop">
+    <a href="#">
+        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
+    </a>
+</div>
+<script>
+    var submitresume = document.getElementsByClassName('submit-border');
+    for (var i=0; i<submitresume.length; i++) {
+        submitresume[i].onclick = function () {
+            alert("请将简历发送至邮箱hr@tusvisiontech.com")
+        }
+    }
+</script>
+<script>
+    $(function () {
+        $(function(){
+            $(window).scroll(function(){
+                if($(window).scrollTop() > 100){
+                    $("#gotop").fadeIn(1000);//一秒渐入动画
+                }else{
+                    $("#gotop").fadeOut(1000);//一秒渐隐动画
+                }
+            });
+
+            $("#gotop").click(function(){
+                $('body,html').animate({scrollTop:0},400);
+            });
+
+            $(".sss").click(function(){
+                //alert("disappear")
+                disappear('solutions');
+            });
+            $(".aboutus").click(function(){
+                //alert("disappear")
+                disappear('aboutus');
+            });
+            $(".nav-mobile-pic").click(function(){
+                $(".nav-mobile").toggle();
+                var a = $(".nav-mobile-pic").css("border-color");
+                if (a != 'rgb(255, 0, 0)') {
+                    $(".nav-mobile-pic").css("border", "1px solid red");
+                } else {
+                    $(".nav-mobile-pic").css("border", "1px solid transparent");
+                }
+            });
+            $(".pre_page").click(function () {
+                var url = window.location.href;
+                var index = url.indexOf('page');
+                if (index < 0) {
+                    return;
+                } else {
+                    var currentpage = url.substr(index + 4, 1)
+                    if (currentpage == 2) window.location.href = "/joinus";
+                }
+            });
+            $(".next_page").click(function () {
+                var max_page = 2;
+                var url = window.location.href;
+                var index = url.indexOf('page');
+                if (index < 0) {
+                    window.location.href = "/joinus_page2";
+                } else {
+                    var currentpage = url.substr(index + 4, 1)
+                    if (currentpage < max_page) window.location.href = url.replace(currentpage, currentpage + 1);
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+
+

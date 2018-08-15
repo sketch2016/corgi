@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
+    <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <style>
+        body {
+            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+        }
+        h2 {
+            font-size: 2.25rem;
+        }
+
+        ol {
+            font-size: 1.25rem !important;
+            line-height: 1.875rem !important;
+        }
+        .solution_title {
+            text-align: left;
+            color: #dc2925;
+            margin-left: 0.625rem;
+            margin-bottom: 1.375rem;
+        }
+        .tvp img {
+            width: 40%;
+        }
+        @media screen and (max-width: 768px){
+            ol {
+                font-size: 1.5rem !important;
+                line-height: 2.2rem !important;
+                margin-left: -2.4rem;
+            }
+            .tvp img {
+                width: 60%;
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/autoshowmenu.js"></script>
+
+    <!--[if IE]>
+    <script>
+        (function () {
+            if (!/*@cc_on!@*/0) return;
+            var e = "header,footer,nav,article,section".split(','), i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+    <![endif]-->
+    <script>
+        $(document).ready(function () {
+            $('#circleContent').carousel({interval: 2000});//每隔5秒自动轮播
+        });
+    </script>
+
+    <title>启迪睿视信息技术有限公司</title>
+
+</head>
+
+<body style="">
+
+<div class="navigation-menu">
+    <div class="qdrs-nav-brand">
+        <a href="/">
+            <img src="../static/img/logo.svg">
+        </a>
+    </div>
+    <div class="qdrs-nav-menu" style="float: left;">
+        <ul style="list-style-type: none">
+            <li><a href="/">首页</a></li>
+            <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')" class="active">
+                <a href="/solutions">解决方案</a>
+                <ul id="solutions" style="list-style-type:none;">
+                    <li class="sss"><a href="#energy">能源行业</a></li>
+                    <li class="sss"><a href="#tobacco">烟草行业</a></li>
+                    <li class="sss"><a href="#retail">新零售</a></li>
+                    <li class="sss"><a href="#logistics">新物流</a></li>
+                </ul>
+            </li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus" ><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
+            <li><a href="/joinus">加入我们</a></li>
+            <li><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile-pic" >
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.4px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.1px 0.4rem 0 0.5rem;display: block;"></div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+        <ul style=";z-index: 20;width: 100%;list-style-type: none;rgba(0,0,0,0.7)">
+            <li ><a href="/">首页</a></li>
+            <li ><a href="/solutions">解决方案</a></li>
+            <li ><a href="/about">关于睿视</a></li>
+            <li ><a href="/joinus">加入我们</a></li>
+            <li ><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+
+<!--导航结束-->
+<!-- when position:fixed opened, open this too.
+<div>
+    <span class="blank" style="height:50px;"></span>
+</div>
+-->
+
+<div class ="fill-nav"></div>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="circleContent" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner_solution.webp">
+                                <img style="width: 100%;" src="../static/img/banner_solution.jpg"/>
+                            </picture>
+
+                            <div class="carousel-caption"></div>
+                        </div>
+                    </div>
+                    <!--<a class="carousel-control left" href="#circleContent" data-slide="prevent">‹</a>-->
+                    <!--<a class="carousel-control right" href="#circleContent" data-slide="next">›</a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner结束-->
+
+<!--挑战与机遇 -->
+<div class ="challenge challenge_title" style="background-image: url(../static/img/bg_challenge.png);background-size: cover;background-position:center;" id="challenge">
+    <div style="width: 100%; height: 70%; margin: 10% auto;padding: 0.625rem 2rem 2.5rem 2rem;background-color: rgba(100,100,100,0.6)" class="qdrs_title">
+        <div style="margin-top: 5rem">
+            <h1>挑战与机遇</h1>
+            <h4>challenge&nbsp;a<span class="xxian" style="border-bottom: 3px solid white;">nd&nbsp;</span>Opportunity</h4>
+        </div>
+        <div style="padding-bottom: 2rem">
+            <div style="line-height: 2rem; letter-spacing: 0.0625rem">
+                <ul class="center-block" style="" id="brand-desc">
+                    <li>
+                        <p style="text-align:left; color: white;">
+                            人工智能时代处在同一起跑线
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:left; color: white;">
+                            传统巨头基于图像信号处理
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:left; color: white;">欧美厂商对中国市场无客户定制，无turnkey方案，无有力FAE支持，价格昂贵</p>
+                    </li>
+                    <li>
+                        <p style="text-align:left; color: white;">
+                            优化难度远高于PC，技术门槛高需要更加专业的工程技术团队
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:left; color: white;">
+                            本地实时响应并处理大量数据，端侧计算需求不断提升
+                        </p>
+                    </li>
+                    <li>
+                        <p style="text-align:left; color: white;">
+                            AI算法需依据垂直领域优化边界条件快速收敛
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--TVP -->
+<div class="tvp" style="padding-bottom: 3rem">
+    <div style="padding-top: 3.125rem;padding-bottom: 2rem"  class="qdrs_title">
+        <h2 style="text-align: center; color: red;">TusVision Platform 1 (TVP1)</h2>
+    </div>
+    <div>
+        <img src="../static/img/platform.png" class="center-block"/>
+    </div>
+</div>
+
+<!--烟草行业 -->
+<div>
+    <div style="padding-top: 2.5rem" id="tobacco" class="qdrs_title">
+        <h1>烟草行业</h1>
+        <h4>Tobacc<span class="xxian">o&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/tobacco.jpg);" class="tobacco">
+        <div class="qdrs_solution" style="">
+            <div>
+                <h2 class="solution_title">智慧烟草系统</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>生产制造环节，减少产品周转费用， 缩短机器停工期，提升产品质量</li>
+                        <li>原料库智能物流，烟筐烟叶残留智能识别，条包检测</li>
+                        <li>通过在堆垛机上架设相机，在出入库的过程中实时记录各类原料箱的信息（条形码），可以使用有线或无线实时传入服务器</li>
+                        <li>相机对各个仓位进行遍历，拍摄每个仓位，实时传入服务器，对比录入判别原料</li>
+                        <li>人工智能视觉选叶系统，不同光源进行实时采集，通过摄像头进行学习，运行神经网络算法，实现色彩分类</li>
+                        <li>用近红外光谱检测，通过SVM与神经网络实时分析光谱数据，检定烟叶含水率，还原糖、蛋白质、氮等成分含量，为油分分级提供参考，并监测成分变异系数，提升产品质量一致性</li>
+                        <li>智能检测烟支燃烧状态，通过相机实时监控，烟灰柱位置的形状，碎片数，掉片等特征，运行神经网络算法分析进行判断，实现批量实时监控</li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--能源行业 -->
+<div>
+    <div style="padding-top: 2.5rem" id="energy" class="qdrs_title">
+        <h1>能源行业</h1>
+        <h4>Energ<span class="xxian">y&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/energy.jpg);" class="energy">
+        <div class="qdrs_solution" style="">
+            <div>
+                <h2 class="solution_title">智慧加油站</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>车辆识别和驾驶人身份识别</li>
+                        <li>对加油过程进行动作识别</li>
+                        <li>对车辆行走轨迹及停放位置进行识别，从而对车辆加油的全过程进行监控识别</li>
+                        <li>识别结果和油站后台管理系统进行通讯，以实现自动的加油支付过程（视觉无感支付）</li>
+                        <li>利用机器视觉对加油站前庭环境进行监控，对安保、消防隐患进行识别和监控</li>
+                        <li>利用机器视觉实现对车辆油箱口位置的精准定位识别，从而指引加油机械臂自动完成加油过程（无人加油）</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--零售行业 -->
+<div>
+    <div style="padding-top: 2.5rem" id="retail" class="qdrs_title">
+        <h1>新零售行业</h1>
+        <h4>Retai<span class="xxian">l&nbsp;In</span>dustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/retail.jpg);color: white; padding: 13.875rem 0% 0% 40%;
+background-size: cover;background-position:center;" class="retail">
+        <div class="qdrs_solution">
+            <div>
+                <h2 class="solution_title">智慧无人柜</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>24小时无人售货，扫手开门，自动扣款，无感支付，消费体验完美</li>
+                        <li>商品种类识别，数量统计，异常行为提示，新商品登录，大数据生成</li>
+                        <li>不需要商品额外标识(如RFID), 大幅节省成本</li>
+                        <li>结合身份验证，解决专卖商品，正品及消费人群识别问题</li>
+                        <li>商品识别率高达99%</li>
+                        <li>录入时间＜3min</li>
+                        <li>支持在线升级，远程控制</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--物流行业 -->
+<div>
+    <div style="padding-top: 40px" id="logistics" class="qdrs_title">
+        <h1>新物流行业</h1>
+        <h4>Logisti<span class="xxian">cs&nbsp;I</span>ndustry</h4>
+    </div>
+    <div style="background-image: url(../static/img/logistics.jpg);color: white; padding: 13.875rem 30% 0% 0%;
+background-size: cover;background-position:center;" class="logistics">
+        <div class="qdrs_solution" style="padding: 2.375rem 6.25rem 5rem 10.75rem">
+            <div>
+                <h2 class="solution_title">智慧物流站</h2>
+            </div>
+            <div>
+                <div>
+                    <ol>
+                        <li>高度集成: 多面扫码，体积测量</li>
+                        <li>条码扫描：实时识别贴在包裹前后左右上任一面上的条码数据</li>
+                        <li>结合流水线改造，根据条码自动分拣</li>
+                        <li>识别速度达到20fps，准确率高达99%</li>
+                        <li>同时可识别64条码每帧</li>
+                        <li>尺寸测量精度达0.5cm</li>
+                        <li>传送带最大尺寸1.5*1.2*0.5m，传送带最高速度2.0米/秒</li>
+                        <li>支持在线升级</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="gotop">
+    <a href="#">
+        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
+    </a>
+</div>
+<div>
+    <div style="height: 5rem;background-color: white;padding-top: 2rem">
+        <p style="text-align: center;color: black;font-size: 1rem;">
+            2018-芜湖启迪睿视信息技术有限公司 版权所有 <a style="text-decoration: none;color: black" href="http://www.miitbeian.gov.cn">皖ICP备18014597号</a>
+        </p>
+
+    </div>
+</div>
+<script>
+    $(function () {
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#gotop").fadeIn(1000);//一秒渐入动画
+                } else {
+                    $("#gotop").fadeOut(1000);//一秒渐隐动画
+                }
+            });
+
+            $("#gotop").click(function () {
+                $('body,html').animate({scrollTop: 0}, 400);
+            });
+
+            $(".sss").click(function () {
+                //alert("disappear")
+                disappear('solutions');
+            });
+            $(".aboutus").click(function () {
+                //alert("disappear")
+                disappear('aboutus');
+            });
+            $(".nav-mobile-pic").click(function(){
+                $(".nav-mobile").toggle();
+                var a = $(".nav-mobile-pic").css("border-color");
+                if (a != 'rgb(255, 0, 0)') {
+                    $(".nav-mobile-pic").css("border", "1px solid red");
+                } else {
+                    $(".nav-mobile-pic").css("border", "1px solid transparent");
+                }
+            });
+        });
+    });
+
+</script>
+
+</body>
+</html>
+
+
+

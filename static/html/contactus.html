@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="keywords" content="人工智能，无人售货柜，人工智能加油站，烟草，启迪睿视，启迪睿视信息技术有限公司">
+    <meta name="description" content="启迪睿视将人工智能应用到多个领域，主要包括零售行业、能源行业、物流行业和烟草行业，实现了从人工到智能的跨越">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+    <link rel="stylesheet" href="../static/css/about.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+
+    <style>
+        body {
+            font-family: 黑体,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu !important;
+        }
+        .row h4 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.15rem;
+        }
+        .addr {
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+
+    <script type="text/javascript" src="../static/js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+    <script type="text/javascript" src="../static/js/autoshowmenu.js"></script>
+
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+    <!--[if IE]>
+    <script>
+        (function () {
+            if (!/*@cc_on!@*/0) return;
+            var e = "header,footer,nav,article,section".split(','), i = e.length;
+            while (i--) {
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+    <![endif]-->
+    <script>
+        $(document).ready(function () {
+            $('#circleContent').carousel({interval: 2000});//每隔5秒自动轮播
+        });
+    </script>
+
+    <title>启迪睿视信息技术有限公司</title>
+
+</head>
+
+<body>
+<div class="navigation-menu">
+    <div class="qdrs-nav-brand">
+        <a href="/">
+            <img src="../static/img/logo.svg">
+        </a>
+    </div>
+    <div class="qdrs-nav-menu" style="float: left;">
+        <ul style="list-style-type: none">
+            <li><a href="/">首页</a></li>
+            <li onmouseover="appear('solutions')" onmouseout="disappear('solutions')">
+                <a href="/solutions">解决方案</a>
+                <ul id="solutions" style="list-style-type:none;">
+                    <li class="sss"><a href="/solutions#energy">能源行业</a></li>
+                    <li class="sss"><a href="/solutions#tobacco">烟草行业</a></li>
+                    <li class="sss"><a href="/solutions#retail">新零售</a></li>
+                    <li class="sss"><a href="/solutions#logistics">新物流</a></li>
+                </ul>
+            </li>
+            <li onmouseover="appear('aboutus')" onmouseout="disappear('aboutus')"><a href="/about">关于睿视</a>
+                <ul id="aboutus">
+                    <li class="aboutus"><a href="/about#about_us">关于我们</a></li>
+                    <li class="aboutus"><a href="/about#wish">使命愿景</a></li>
+                    <li class="aboutus"><a href="/about#brand">品牌内涵</a></li>
+                    <li class="aboutus"><a href="/about#team">团队风采</a></li>
+                    <li class="aboutus"><a href="/about#trace">睿视之路</a></li>
+                </ul>
+            </li>
+            <li><a href="/joinus">加入我们</a></li>
+            <li class="active"><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+    <div class="nav-mobile-pic" >
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 5px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.4px 0.4rem 0 0.5rem;display: block;"></div>
+        <div style="width: 2rem; height: 3px;background-color: #2F3F4F;margin: 2.1px 0.4rem 0 0.5rem;display: block;"></div>
+    </div>
+    <div class="nav-mobile" id="nav-mobile">
+        <ul style=";z-index: 20;width: 100%;list-style-type: none;rgba(0,0,0,0.7)">
+            <li ><a href="/">首页</a></li>
+            <li ><a href="/solutions">解决方案</a></li>
+            <li ><a href="/about">关于睿视</a></li>
+            <li ><a href="/joinus">加入我们</a></li>
+            <li ><a href="/contactus">联系我们</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航结束-->
+<!-- when position:fixed opened, open this too.
+<div>
+    <span class="blank" style="height:50px;"></span>
+</div>
+-->
+
+<div class ="fill-nav"></div>
+
+<div class="banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12 col-xs-12">
+                <div id="circleContent" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <picture>
+                                <source type="image/webp" srcset="../static/img/banner_contact.webp">
+                                <img style="width: 100%;" src="../static/img/banner_contact.jpg"/>
+                            </picture>
+
+                            <!--<div class="carousel-caption"> </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--banner结束-->
+
+<!--联系我们 -->
+<div>
+
+    <div style="background-image: url(../static/img/bg_contact.png); background-size: cover;background-position:center;">
+        <div style="padding: 3.125rem" class="qdrs_title">
+            <h1>联系我们</h1>
+            <h4>Con<span class="xxian">tact&nbsp;</span>us</h4>
+        </div>
+        <div class="container">
+            <div class="row" style="padding:3% 15% 0 15%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <img src="../static/img/addr.png" class="center-block" height="auto" width="30%"/>
+                        <h4 style="text-align: center">公司地址</h4>
+                    </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <img src="../static/img/tele.png" class="center-block" height="auto" width="30%"/>
+                        <h4 style="text-align: center">电话</h4>
+                    </div>
+                    -->
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <img src="../static/img/email.png" class="center-block" height="auto" width="30%"/>
+                        <h4 style="text-align: center">邮箱</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="padding:0 15%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p class="addr">上海市浦东新区祖冲之路2399弄A栋917&901</p>
+                    </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">021-6666666</p>
+                    </div>
+
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p style="text-align: center">sales@tusvisiontech.com</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div class="row" style="padding:0 15%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p class="addr">北京市海淀区中关村路1号清华科技园科技大厦A座11层</p>
+                    </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">021-6666666</p>
+                    </div>
+                    -->
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p style="text-align: center">sales@tusvisiontech.com</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row" style="padding:0 15%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p class="addr">芜湖市弋江区服务外包产业园3号楼18层</p>
+                    </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">021-6666666</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">sales@tusvisiontech.com</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <div class="row" style="padding:0 15% 3% 15%">
+                <div class="col-lg-12 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-sm-6 col-xs-6 col-md-6">
+                        <p class="addr">Euston House,24 Eversholt Street London,NW1AD,UK</p>
+                    </div>
+                    <!--
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">021-6666666</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 col-xs-4 col-md-4">
+                        <p style="text-align: center">sales@tusvisiontech.com</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--百度地图容器-->
+<div style="width:80%;height:550px;border:#ccc solid 1px;margin: auto;" id="dituContent"></div>
+<div>
+    <div style="height: 5rem;background-color: white;padding-top: 2rem">
+        <p style="text-align: center;color: black;font-size: 1rem;">
+            2018-芜湖启迪睿视信息技术有限公司 版权所有 <a style="text-decoration: none;color: black" href="http://www.miitbeian.gov.cn">皖ICP备18014597号</a>
+        </p>
+
+    </div>
+</div>
+<div class="gotop">
+    <a href="#">
+        <img src="../static/img/gotop.png" alt="返回顶部" id="gotop" title="返回顶部">
+    </a>
+</div>
+<script>
+    $(function () {
+        $(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 100) {
+                    $("#gotop").fadeIn(1000);//一秒渐入动画
+                } else {
+                    $("#gotop").fadeOut(1000);//一秒渐隐动画
+                }
+            });
+
+            $("#gotop").click(function () {
+                $('body,html').animate({scrollTop: 0}, 400);
+            });
+
+            $(".sss").click(function () {
+                disappear('solutions');
+            });
+            $(".aboutus").click(function () {
+                disappear('aboutus');
+            });
+
+            $(".nav-mobile-pic").click(function(){
+                $(".nav-mobile").toggle();
+                var a = $(".nav-mobile-pic").css("border-color");
+                if (a != 'rgb(255, 0, 0)') {
+                    $(".nav-mobile-pic").css("border", "1px solid red");
+                } else {
+                    $(".nav-mobile-pic").css("border", "1px solid transparent");
+                }
+            });
+        });
+    });
+</script>
+<script type="text/javascript">
+    function isPC() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            //跳转移动端页面
+            return false;
+        } else {
+            //跳转pc端页面
+            return true;
+        }
+    }
+
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+
+    //创建地图函数：
+    function createMap() {
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+
+        var point;
+        var pc = isPC();
+        if(pc){//如果是电脑跳转到
+            var point = new BMap.Point(60, 40);//定义一个中心点坐标
+        }else{  //如果是手机,跳转到
+            var point = new BMap.Point(120, 40);//定义一个中心点坐标
+        }
+
+        //var point = new BMap.Point(60, 40);//定义一个中心点坐标
+        map.centerAndZoom(point, 4);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent() {
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl() {
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        //var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        //map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor: BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+    //标注点数组
+    var markerArr = [{
+        title: "上海市",//"上海市浦东新区祖冲之路2399弄A栋917室"
+        content: "",
+        point: "121.636503|31.21835",
+        isOpen: 0,
+        icon: {w: 21 * 2, h: 21 * 4, l: 0, t: 0, x: 6, lb: 5}
+    }
+        , {
+            title: "芜湖市",//"芜湖市弋江区服务外包产业园3号楼18层"
+            content: "",
+            point: "118.370344|31.277492",
+            isOpen: 0,
+            icon: {w: 21 * 4, h: 21 * 4, l: 0, t: 0, x: 6, lb: 5}
+        }
+        , {
+            title: "北京市",//"北京市海淀区中关村路1号清华科技园科技大厦A座11层"
+            content: "",
+            point: "116.337129|39.999823",
+            isOpen: 0,
+            icon: {w: 21 * 4, h: 21 * 4, l: 0, t: 0, x: 6, lb: 5}
+        }
+        , {
+            title: "Euston House",//"Euston House,24 Eversholt Street London,NW1AD,UK"
+            content: "",
+            point: "-0.132649|51.530809",
+            isOpen: 0,
+            icon: {w: 21 * 4, h: 21 * 4, l: 0, t: 0, x: 6, lb: 5}
+        }
+    ];
+
+    //创建marker
+    function addMarker() {
+        for (var i = 0; i < markerArr.length; i++) {
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0, p1);
+            var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point, {icon: iconImg});
+            var iw = createInfoWindow(i);
+            var label = new BMap.Label(json.title, {"offset": new BMap.Size(json.icon.lb - json.icon.x + 10, -20)});
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                borderColor: "#808080",
+                color: "#333",
+                cursor: "pointer"
+            });
+
+            (function () {
+                var index = i;
+                var _iw = createInfoWindow(i);
+                var _marker = marker;
+                _marker.addEventListener("click", function () {
+                    this.openInfoWindow(_iw);
+                });
+                _iw.addEventListener("open", function () {
+                    _marker.getLabel().hide();
+                })
+                _iw.addEventListener("close", function () {
+                    _marker.getLabel().show();
+                })
+                label.addEventListener("click", function () {
+                    _marker.openInfoWindow(_iw);
+                })
+                if (!!json.isOpen) {
+                    label.hide();
+                    _marker.openInfoWindow(_iw);
+                }
+            })()
+        }
+    }
+
+    //创建InfoWindow
+    function createInfoWindow(i) {
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>" + json.content + "</div>");
+        return iw;
+    }
+
+    //创建一个Icon
+    function createIcon1(json) {
+        var icon = new BMap.Icon("../static/img/location.png", new BMap.Size(json.w, json.h), {
+            imageOffset: new BMap.Size(-json.l, -json.t),
+            infoWindowOffset: new BMap.Size(json.lb + 5, 1),
+            offset: new BMap.Size(json.x, json.h)
+        })
+        return icon;
+    }
+
+    function createIcon(json) {
+        var icon = new BMap.Icon("../static/img/location.png", new BMap.Size(100, 100), {
+            imageOffset: new BMap.Size(10, 0),
+            infoWindowOffset: new BMap.Size(20, 20),
+            offset: new BMap.Size(50, 60)
+        })
+
+        return icon;
+    }
+
+    initMap();//创建和初始化地图
+</script>
+</body>
+</html>
+
+
+
